@@ -6,6 +6,7 @@ from app.modules.dataset.models import PublicationType
 
 
 class AuthorForm(FlaskForm):
+    # Comentario inutil solo para examen
     name = StringField("Name", validators=[DataRequired()])
     affiliation = StringField("Affiliation")
     orcid = StringField("ORCID")
