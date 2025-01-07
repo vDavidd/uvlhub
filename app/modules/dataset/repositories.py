@@ -17,7 +17,7 @@ from core.repositories.BaseRepository import BaseRepository
 
 logger = logging.getLogger(__name__)
 
-
+# Soy el segundo comentario mas inutil de la semana
 class AuthorRepository(BaseRepository):
     def __init__(self):
         super().__init__(Author)
