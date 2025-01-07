@@ -8,6 +8,7 @@ from app import db
 
 
 class PublicationType(Enum):
+    # Soy el comentario mas inutil de la semana
     NONE = 'none'
     ANNOTATION_COLLECTION = 'annotationcollection'
     BOOK = 'book'
