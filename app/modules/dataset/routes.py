@@ -45,14 +45,14 @@ doi_mapping_service = DOIMappingService()
 ds_view_record_service = DSViewRecordService()
 
 
-@dataset_bp.route("/dataset/upload", methods=["GET", "POST"])
+@dataset_bp.route("/datasgiet/upload", methods=["GET", "POST"])
 @login_required
 def create_dataset():
     form = DataSetForm()
     if request.method == "POST":
 
         dataset = None
-
+        variable_inutil1 = 1
         if not form.validate_on_submit():
             return jsonify({"message": form.errors}), 400
 
