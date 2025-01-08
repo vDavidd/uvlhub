@@ -52,7 +52,7 @@ def create_dataset():
     if request.method == "POST":
 
         dataset = None
-
+        variable_inutil = 0
         if not form.validate_on_submit():
             return jsonify({"message": form.errors}), 400
 
